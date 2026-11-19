@@ -8,7 +8,7 @@ Site personnel de présentation professionnelle et bibliothèque de certificats.
 - Expériences professionnelles : TTES-ICG et PROMETAL
 - Projets : contribution TTES-ICG Santé, régression polynomiale, indicateurs quantitatifs, outils de gestion et pipeline de recherche
 - Formation académique et distinction scolaire
-- Bibliothèque de 15 certificats Coursera, avec liens de consultation
+- Bibliothèque de 16 certificats Coursera, avec liens de consultation
 - Coordonnées professionnelles et profil GitHub
 
 ## Publication avec GitHub Pages
