@@ -63,3 +63,14 @@
 .doc-actions button[data-preview]{display:inline-block;padding:8px 12px;border:0;background:#f0f2f5;color:#344158;font:700 10px var(--sans);cursor:pointer}
 .doc-actions button[data-preview]:hover{background:#e5e9ee;color:#9b6f40}
 @media(max-width:620px){.achievement-banner{align-items:start;flex-direction:column;gap:12px;padding:22px}.achievement-banner h3{font-size:17px}}
+
+
+.public-files{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0 32px}
+.public-file-card{background:#fff;border:1px solid #dfe4eb;padding:17px 18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.public-file-copy{display:flex;gap:13px;align-items:center}
+.public-file-copy h3{font:700 13px var(--display);margin:0}
+.public-file-copy p{font-size:10px;color:#788392;margin:3px 0 0;line-height:1.6}
+.public-file-action{font-size:10px;color:#8a704f;padding-left:51px}
+.public-file-card .cert-link{align-self:flex-start;margin-left:51px}
+.achievement-actions{display:flex;flex-direction:column;align-items:flex-end;gap:9px}
+@media(max-width:620px){.public-files{grid-template-columns:1fr}.public-file-card{padding:15px}.public-file-action{padding-left:0}.public-file-card .cert-link{margin-left:0}.achievement-actions{align-items:flex-start}}
