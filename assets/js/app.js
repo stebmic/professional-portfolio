@@ -100,9 +100,10 @@ publicFiles.forEach(file => {
   fetch(file.url, { method: "HEAD", cache: "no-store" })
     .then(response => {
       if (!response.ok) return;
-      const link = document.querySelector('[data-public-file="' + file.id + '"]');
+      document.querySelectorAll('[data-public-file="' + file.id + '"]').forEach(link => {
+        link.hidden = false;
+      });
       const status = document.querySelector('[data-public-status="' + file.id + '"]');
-      if (link) link.hidden = false;
       if (status) status.hidden = true;
     })
     .catch(() => {});
