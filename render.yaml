@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: steve-botame-portfolio
+    runtime: static
+    branch: main
+    buildCommand: "true"
+    staticPublishPath: .
