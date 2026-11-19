@@ -1,9 +1,21 @@
-/* Ajoutez ici les documents destinés à être publics.
-   Exemple :
-   { title: "CV", category: "cv", description: "Curriculum vitae — version française",
-     file: "documents/cv/cv-fr.pdf", date: "2026" }
-*/
-const documents = [];
+const documents = [
+  {
+    title: "CV public — Steve Michaël Botame",
+    category: "cv",
+    description: "Synthèse professionnelle et parcours · coordonnées personnelles limitées",
+    file: "documents/cv/cv-public.html",
+    date: "2026",
+    type: "HTML"
+  },
+  {
+    title: "Leeloo Trading — Certificate of Achievement",
+    category: "certification",
+    description: "Fiche de consultation basée sur le certificat daté du 17 novembre 2022 · pas le scan original",
+    file: "documents/certifications/leeloo-trading-2022.html",
+    date: "2022",
+    type: "HTML"
+  }
+];
 
 const list = document.getElementById("documentList");
 const count = document.getElementById("docCount");
@@ -17,24 +29,17 @@ function renderDocuments() {
   const filtered = documents.filter(doc => activeFilter === "all" || doc.category === activeFilter);
   count.textContent = filtered.length + (filtered.length > 1 ? " documents" : " document");
   if (!filtered.length) {
-    list.innerHTML = '<div class="empty-state"><span class="empty-icon">＋</span><h3>' +
-      (documents.length ? "Aucun document dans cette catégorie." : "La bibliothèque est prête.") +
-      '</h3><p>' + (documents.length ? "Choisissez une autre catégorie pour afficher les documents disponibles." :
-      'Les documents apparaîtront ici dès qu\'ils auront été ajoutés au dossier <code>documents/</code> et enregistrés dans <code>assets/js/app.js</code>.') + '</p></div>';
+    list.innerHTML = '<div class="empty-state">Aucun document dans cette catégorie.</div>';
     return;
   }
-  list.innerHTML = filtered.map((doc, index) => {
-    const safeTitle = escapeHtml(doc.title);
-    const safeDescription = escapeHtml(doc.description || "Document consultable");
-    const safeDate = escapeHtml(doc.date || "");
-    return '<article class="document-row"><div class="document-info"><span class="pdf-icon">PDF</span><div><h3>' + safeTitle +
-      '</h3><p>' + safeDescription + (safeDate ? " · " + safeDate : "") +
-      '</p></div></div><div class="doc-actions"><button type="button" data-preview="' + index + '">Consulter ↗</button><a href="' +
-      encodeURI(doc.file) + '" target="_blank" rel="noopener">Télécharger ↓</a></div></article>';
-  }).join("");
+  list.innerHTML = filtered.map((doc, index) =>
+    '<article class="document-row"><div class="document-info"><span class="pdf-icon">' + escapeHtml(doc.type || "DOC") + '</span><div><h3>' +
+    escapeHtml(doc.title) + '</h3><p>' + escapeHtml(doc.description || "Document consultable") +
+    (doc.date ? " · " + escapeHtml(doc.date) : "") + '</p></div></div><div class="doc-actions"><button type="button" data-preview="' +
+    index + '">Consulter ↗</button><a href="' + encodeURI(doc.file) + '" target="_blank" rel="noopener">Ouvrir ↓</a></div></article>'
+  ).join("");
   list.querySelectorAll("[data-preview]").forEach(button => button.addEventListener("click", () => {
-    const doc = filtered[Number(button.dataset.preview)];
-    showDocument(doc);
+    showDocument(filtered[Number(button.dataset.preview)]);
   }));
 }
 function showDocument(doc) {
