@@ -1,34 +1,40 @@
-# Steve Michaël Botame — Portfolio professionnel
+# Portfolio professionnel — Steve Michaël Botame
 
-Portfolio personnel présentant le parcours, les expériences, les compétences, les réalisations techniques et une bibliothèque de documents consultables.
+Site personnel de présentation professionnelle et bibliothèque de certificats.
 
 ## Contenu du site
 
-- Profil : développement logiciel, analyse de données, modélisation quantitative et digitalisation opérationnelle.
-- Expérience : TTES-ICG, PROMETAL et recherche indépendante.
-- Projets : contributions à TTES-ICG Santé, Polynomial Regression ML Trainer, indicateurs quantitatifs, workflows de gestion et recherche empirique.
-- Formation et certificats : parcours académique et cours certifiants signalés comme délivrés par Coursera.
-- Bibliothèque documentaire : CV public et répertoire des certifications, consultables dans la page.
-
-## Documents
-
-- documents/cv/cv-public.html : CV général à dominante technique.
-- documents/cv/cv-banque-assurance.html : version ciblée Banque & Assurance, sans téléphone ou adresse personnelle détaillée.
-- documents/certifications/coursera-certifications.html : liste des certificats Coursera avec liens de consultation.
-
-Les certificats et diplômes originaux ne sont pas tous stockés dans ce dépôt. Les liens Coursera sont ceux transmis dans les notifications de délivrance reçues par e-mail.
+- Profil : développement logiciel, data, automatisation et modélisation quantitative
+- Expériences professionnelles : TTES-ICG et PROMETAL
+- Projets : contribution TTES-ICG Santé, régression polynomiale, indicateurs quantitatifs, outils de gestion et pipeline de recherche
+- Formation académique et distinction scolaire
+- Bibliothèque de 15 certificats Coursera, avec liens de consultation
+- Coordonnées professionnelles et profil GitHub
 
 ## Publication avec GitHub Pages
 
-1. Ouvrir **Settings → Pages**.
-2. Sous **Build and deployment**, choisir **Deploy from a branch**.
-3. Sélectionner la branche main et le dossier /(root).
+1. Ouvrir **Settings → Pages** dans ce dépôt.
+2. Dans **Build and deployment**, choisir **Deploy from a branch**.
+3. Sélectionner la branche `main` et le dossier `/(root)`.
 4. Enregistrer.
 
-URL prévue : https://stebmic.github.io/professional-portfolio/
+Adresse prévue : https://stebmic.github.io/professional-portfolio/
 
-## Confidentialité et vérification
+## Bibliothèque de certificats
 
-Ce dépôt est public. Ne pas y ajouter de pièce d’identité, passeport, adresse personnelle, données bancaires, identifiants de compte, relevés privés ou contrats confidentiels.
+Les liens du tableau `documents` dans `assets/js/app.js` ont été extraits des e-mails Coursera annonçant la délivrance des certificats. Ils ouvrent les pages correspondantes de Coursera.
 
-Le contenu a été construit à partir des CV disponibles, des conversations et des e-mails de délivrance de certificats. Les intitulés, dates et niveaux de compétence doivent être relus par le titulaire avant une candidature. Le parcours universitaire inachevé est explicitement indiqué.
+Pour ajouter un PDF public détenu localement, le déposer dans `documents/`, puis ajouter une entrée et une fonction d'aperçu dans `assets/js/app.js`. Ne jamais publier de contrat, pièce d'identité, adresse privée, données bancaires ou document contenant des identifiants non destinés au public.
+
+## Précautions éditoriales
+
+- La première année de mathématiques à l'Université de Douala est indiquée comme un cursus non achevé ; aucun diplôme universitaire n'est revendiqué.
+- Le projet Polynomial Regression ML Trainer est signalé comme dépôt privé.
+- Les projets de recherche et prototypes sont identifiés comme tels.
+- Les expériences et dates proviennent des CV disponibles dans la bibliothèque de fichiers.
+- Le certificat Leeloo Trading du 17 novembre 2022 est présenté comme une réalisation ; le contrat associé et ses données de compte ne sont pas publiés.
+- Les documents académiques originaux et un CV PDF public pourront être ajoutés après préparation de versions expurgées des informations privées.
+
+## Contact
+
+stevebotame@gmail.com · https://github.com/stebmic
