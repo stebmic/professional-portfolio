@@ -1,31 +1,33 @@
-# Portfolio professionnel — Steve Michaël Botame
+# Steve Michaël Botame — Portfolio professionnel
 
-Site vitrine personnel et bibliothèque de fiches documentaires publiques.
+Portfolio personnel présentant le parcours, les expériences, les compétences, les réalisations techniques et une bibliothèque de documents consultables.
 
-## Contenu
+## Contenu du site
 
-- Profil professionnel, expériences et parcours académique.
-- Compétences en développement logiciel, données, modélisation quantitative et automatisation.
-- Projets personnels et contributions techniques identifiés par leur statut.
-- 16 certificats Coursera confirmés par les notifications d'émission reçues en 2026.
-- Fiches publiques de CV et de distinction Leeloo, consultables directement dans le navigateur.
+- Profil : développement logiciel, analyse de données, modélisation quantitative et digitalisation opérationnelle.
+- Expérience : TTES-ICG, PROMETAL et recherche indépendante.
+- Projets : contributions à TTES-ICG Santé, Polynomial Regression ML Trainer, indicateurs quantitatifs, workflows de gestion et recherche empirique.
+- Formation et certificats : parcours académique et cours certifiants signalés comme délivrés par Coursera.
+- Bibliothèque documentaire : CV public et répertoire des certifications, consultables dans la page.
 
-## GitHub Pages
+## Documents
+
+- documents/cv/cv-public.html : CV public, sans adresse résidentielle détaillée, date de naissance, numéros d’identification ou identifiants de comptes.
+- documents/certifications/coursera-certifications.html : liste des certificats Coursera avec liens de consultation.
+
+Les certificats et diplômes originaux ne sont pas tous stockés dans ce dépôt. Les liens Coursera sont ceux transmis dans les notifications de délivrance reçues par e-mail.
+
+## Publication avec GitHub Pages
 
 1. Ouvrir **Settings → Pages**.
 2. Sous **Build and deployment**, choisir **Deploy from a branch**.
-3. Sélectionner la branche `main` et le dossier `/(root)`, puis enregistrer.
-4. URL attendue : https://stebmic.github.io/professional-portfolio/
+3. Sélectionner la branche main et le dossier /(root).
+4. Enregistrer.
 
-## Documents et confidentialité
+URL prévue : https://stebmic.github.io/professional-portfolio/
 
-Le dépôt est public. Les fiches publiées sont des versions synthétiques préparées pour le portfolio ; elles ne remplacent pas les scans originaux. Les coordonnées téléphoniques divergentes, adresses privées, dates de naissance, numéros d'identité, identifiants de comptes et documents confidentiels ont été exclus.
+## Confidentialité et vérification
 
-Ne téléverser ici que des documents dont la publication publique est volontaire et autorisée. Pour ajouter un PDF partageable, le placer dans `documents/`, puis l'ajouter au tableau `documents` dans `assets/js/app.js`.
+Ce dépôt est public. Ne pas y ajouter de pièce d’identité, passeport, adresse personnelle, données bancaires, identifiants de compte, relevés privés ou contrats confidentiels.
 
-## Précisions de présentation
-
-- Les études universitaires non achevées sont explicitement signalées comme telles.
-- Les contributions à TTES-ICG Santé ne sont pas présentées comme la création exclusive de l'application.
-- Les projets personnels, prototypes et recherches en cours sont identifiés comme tels.
-- Le certificat Leeloo confirme la réussite d'une évaluation et une qualification ; il n'est pas présenté comme une preuve de revenus ou de paiements.
+Le contenu a été construit à partir des CV disponibles, des conversations et des e-mails de délivrance de certificats. Les intitulés, dates et niveaux de compétence doivent être relus par le titulaire avant une candidature. Le parcours universitaire inachevé est explicitement indiqué.
