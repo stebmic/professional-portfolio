@@ -1,44 +1,31 @@
-# Portfolio professionnel
+# Portfolio professionnel — Steve Michaël Botame
 
-Site vitrine personnel avec une bibliothèque documentaire intégrée.
+Site vitrine personnel et bibliothèque de fiches documentaires publiques.
 
-## Aperçu
+## Contenu
 
-- Présentation et profil professionnel
-- Domaines de compétences
-- Sélection de projets avec statut explicite
-- Bibliothèque filtrable de documents PDF
-- Consultation des PDF directement dans la page et ouverture/téléchargement
-- Mise en page responsive (ordinateur, tablette et mobile)
+- Profil professionnel, expériences et parcours académique.
+- Compétences en développement logiciel, données, modélisation quantitative et automatisation.
+- Projets personnels et contributions techniques identifiés par leur statut.
+- 16 certificats Coursera confirmés par les notifications d'émission reçues en 2026.
+- Fiches publiques de CV et de distinction Leeloo, consultables directement dans le navigateur.
 
-## Publication avec GitHub Pages
+## GitHub Pages
 
-1. Ouvrir **Settings → Pages** dans ce dépôt.
-2. Dans **Build and deployment**, choisir **Deploy from a branch**.
-3. Sélectionner la branche `main` et le dossier `/(root)`.
-4. Enregistrer. L'adresse du site sera : https://stebmic.github.io/professional-portfolio/
+1. Ouvrir **Settings → Pages**.
+2. Sous **Build and deployment**, choisir **Deploy from a branch**.
+3. Sélectionner la branche `main` et le dossier `/(root)`, puis enregistrer.
+4. URL attendue : https://stebmic.github.io/professional-portfolio/
 
-## Ajouter un document
+## Documents et confidentialité
 
-1. Ajouter le PDF dans le dossier approprié sous `documents/` (par exemple `documents/cv/` ou `documents/certifications/`).
-2. Ouvrir `assets/js/app.js` et ajouter une entrée dans le tableau `documents` :
+Le dépôt est public. Les fiches publiées sont des versions synthétiques préparées pour le portfolio ; elles ne remplacent pas les scans originaux. Les coordonnées téléphoniques divergentes, adresses privées, dates de naissance, numéros d'identité, identifiants de comptes et documents confidentiels ont été exclus.
 
-```js
-const documents = [
-  {
-    title: "CV — Français",
-    category: "cv",
-    description: "Curriculum vitae",
-    file: "documents/cv/cv-fr.pdf",
-    date: "2026"
-  }
-];
-```
+Ne téléverser ici que des documents dont la publication publique est volontaire et autorisée. Pour ajouter un PDF partageable, le placer dans `documents/`, puis l'ajouter au tableau `documents` dans `assets/js/app.js`.
 
-Catégories acceptées : `cv`, `education`, `certification`, `other`.
+## Précisions de présentation
 
-**Confidentialité :** ce dépôt est public. Ne pas y placer de carte d'identité, passeport, adresse personnelle, coordonnées privées, relevés contenant des données sensibles ou documents qui ne sont pas destinés à une diffusion publique. Préférer des versions expurgées ou des attestations vérifiables conçues pour le partage.
-
-## Personnalisation
-
-Le contenu de démonstration est volontairement prudent. Avant diffusion professionnelle, compléter et vérifier le nom, le titre ciblé, le parcours, les dates, les compétences maîtrisées, les coordonnées et les descriptions de projets.
+- Les études universitaires non achevées sont explicitement signalées comme telles.
+- Les contributions à TTES-ICG Santé ne sont pas présentées comme la création exclusive de l'application.
+- Les projets personnels, prototypes et recherches en cours sont identifiés comme tels.
+- Le certificat Leeloo confirme la réussite d'une évaluation et une qualification ; il n'est pas présenté comme une preuve de revenus ou de paiements.
