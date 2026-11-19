@@ -90,5 +90,23 @@ nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", "false");
 }));
 
+
+const publicFiles = [
+  { id: "cv", url: "documents/cv/Steve_Michael_Botame_CV_Public.pdf" },
+  { id: "leeloo", url: "documents/certifications/Leeloo_Certificate_Public.pdf" }
+];
+
+publicFiles.forEach(file => {
+  fetch(file.url, { method: "HEAD", cache: "no-store" })
+    .then(response => {
+      if (!response.ok) return;
+      const link = document.querySelector('[data-public-file="' + file.id + '"]');
+      const status = document.querySelector('[data-public-status="' + file.id + '"]');
+      if (link) link.hidden = false;
+      if (status) status.hidden = true;
+    })
+    .catch(() => {});
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
 renderDocuments();
