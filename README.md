@@ -24,7 +24,9 @@ Adresse prévue : https://stebmic.github.io/professional-portfolio/
 
 Les liens du tableau `documents` dans `assets/js/app.js` ont été extraits des e-mails Coursera annonçant la délivrance des certificats. Ils ouvrent les pages correspondantes de Coursera.
 
-Pour ajouter un PDF public détenu localement, le déposer dans `documents/`, puis ajouter une entrée avec `file: "documents/chemin/fichier.pdf"` dans le tableau `documents` de `assets/js/app.js`. Le bouton « Consulter dans la page » l’ouvre dans le lecteur PDF intégré. Ne jamais publier de contrat, pièce d'identité, adresse privée, données bancaires ou document contenant des identifiants non destinés au public.
+Les deux PDF publics préparés pour le site ont des chemins réservés : `documents/cv/Steve_Michael_Botame_CV_Public.pdf` et `documents/certifications/Leeloo_Certificate_Public.pdf`. Déposez les fichiers à ces chemins dans le dépôt GitHub. Les boutons de téléchargement apparaîtront automatiquement sur le site lorsque les PDF seront présents.
+
+Les liens Coursera de la bibliothèque ouvrent les pages de vérification correspondantes ; les copies PDF originales doivent être téléchargées depuis le compte Coursera du titulaire avant publication si elles sont souhaitées dans le dépôt. Ne jamais publier de contrat, pièce d'identité, adresse privée, données bancaires ou document contenant des identifiants non destinés au public.
 
 ## Précautions éditoriales
 
