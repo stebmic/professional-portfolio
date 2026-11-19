@@ -53,3 +53,13 @@
 .contact-detail a{font-size:12px;font-weight:700;color:#8b6138}
 @media(max-width:850px){.timeline-item{grid-template-columns:175px 1fr;gap:25px}.education-grid{gap:30px}.profile-stats{gap:10px}}
 @media(max-width:620px){.hero-role{font-size:14px}.profile-stats{grid-template-columns:1fr;gap:12px;margin-top:35px}.profile-stats>div{border-bottom:1px solid var(--line);padding-bottom:10px}.timeline-item{grid-template-columns:1fr;gap:8px;padding:23px 0}.timeline-content h3{font-size:18px}.education-grid{grid-template-columns:1fr;gap:25px}.education-item{grid-template-columns:55px 1fr;gap:12px}.language-section{grid-template-columns:1fr;gap:24px}.language-section h2{font-size:36px}.document-row{grid-template-columns:1fr}.doc-actions{justify-content:space-between;flex-wrap:wrap}.docs-footnote{margin-top:18px}}
+
+
+.achievement-wrap{padding-bottom:40px}
+.achievement-banner{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:26px 30px;background:#fff;border:1px solid var(--line);border-left:3px solid #bd8b54}
+.achievement-banner h3{font:700 20px var(--display);letter-spacing:-.5px;margin:8px 0}
+.achievement-banner p{font-size:12px;line-height:1.8;color:#6d7888;margin:0;max-width:760px}
+.achievement-date{font:800 14px var(--display);letter-spacing:1px;color:#b17d48;white-space:nowrap}
+.doc-actions button[data-preview]{display:inline-block;padding:8px 12px;border:0;background:#f0f2f5;color:#344158;font:700 10px var(--sans);cursor:pointer}
+.doc-actions button[data-preview]:hover{background:#e5e9ee;color:#9b6f40}
+@media(max-width:620px){.achievement-banner{align-items:start;flex-direction:column;gap:12px;padding:22px}.achievement-banner h3{font-size:17px}}
