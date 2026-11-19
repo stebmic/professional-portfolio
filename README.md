@@ -24,7 +24,7 @@ Adresse prévue : https://stebmic.github.io/professional-portfolio/
 
 Les liens du tableau `documents` dans `assets/js/app.js` ont été extraits des e-mails Coursera annonçant la délivrance des certificats. Ils ouvrent les pages correspondantes de Coursera.
 
-Pour ajouter un PDF public détenu localement, le déposer dans `documents/`, puis ajouter une entrée et une fonction d'aperçu dans `assets/js/app.js`. Ne jamais publier de contrat, pièce d'identité, adresse privée, données bancaires ou document contenant des identifiants non destinés au public.
+Pour ajouter un PDF public détenu localement, le déposer dans `documents/`, puis ajouter une entrée avec `file: "documents/chemin/fichier.pdf"` dans le tableau `documents` de `assets/js/app.js`. Le bouton « Consulter dans la page » l’ouvre dans le lecteur PDF intégré. Ne jamais publier de contrat, pièce d'identité, adresse privée, données bancaires ou document contenant des identifiants non destinés au public.
 
 ## Précautions éditoriales
 
