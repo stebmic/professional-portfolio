@@ -1,6 +1,6 @@
 # Documents consultables
 
-Le CV public et le répertoire des certificats Coursera sont référencés dans `assets/js/app.js`.
+Les deux versions publiques du CV (générale et Banque & Assurance) ainsi que le répertoire des certificats Coursera sont référencés dans `assets/js/app.js`.
 
 Les originaux des diplômes et certificats ne sont pas tous présents dans le dépôt. Ajouter uniquement des pièces qui peuvent être rendues publiques, après vérification et, si nécessaire, expurgation des données personnelles.
 
