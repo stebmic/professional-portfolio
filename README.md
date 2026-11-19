@@ -12,7 +12,8 @@ Portfolio personnel présentant le parcours, les expériences, les compétences,
 
 ## Documents
 
-- documents/cv/cv-public.html : CV public, sans adresse résidentielle détaillée, date de naissance, numéros d’identification ou identifiants de comptes.
+- documents/cv/cv-public.html : CV général à dominante technique.
+- documents/cv/cv-banque-assurance.html : version ciblée Banque & Assurance, sans téléphone ou adresse personnelle détaillée.
 - documents/certifications/coursera-certifications.html : liste des certificats Coursera avec liens de consultation.
 
 Les certificats et diplômes originaux ne sont pas tous stockés dans ce dépôt. Les liens Coursera sont ceux transmis dans les notifications de délivrance reçues par e-mail.
