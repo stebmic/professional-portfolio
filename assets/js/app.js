@@ -8,6 +8,14 @@ const documents = [
     badge: "CV"
   },
   {
+    title: "CV orienté Banque & Assurance",
+    category: "cv",
+    description: "Version ciblée pour les fonctions d’appui aux opérations, analyse et support clientèle",
+    file: "documents/cv/cv-banque-assurance.html",
+    date: "2026",
+    badge: "CV"
+  },
+  {
     title: "Certifications et formations Coursera",
     category: "certification",
     description: "15 certificats de cours avec liens de consultation",
