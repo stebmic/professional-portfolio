@@ -1,14 +1,7 @@
-# Documents publics
+# Documents consultables
 
-Déposez ici uniquement les documents que vous souhaitez rendre accessibles à toute personne consultant le portfolio.
+Le CV public et le répertoire des certificats Coursera sont référencés dans `assets/js/app.js`.
 
-Organisation suggérée :
-- `cv/` : CV public
-- `education/` : diplômes et attestations partageables
-- `certifications/` : certificats partageables
-- `professional/` : attestations et références professionnelles
-- `projects/` : rapports, fiches projet et démonstrations
+Les originaux des diplômes et certificats ne sont pas tous présents dans le dépôt. Ajouter uniquement des pièces qui peuvent être rendues publiques, après vérification et, si nécessaire, expurgation des données personnelles.
 
-Après chaque ajout, référencez le fichier dans le tableau `documents` de `assets/js/app.js`.
-
-Ne publiez jamais de pièce d'identité, de données bancaires, de coordonnées privées ou de document confidentiel dans ce dépôt public.
+Ne pas publier de pièce d’identité, passeport, adresse résidentielle, identifiants financiers, contrats confidentiels ou documents contenant des données tierces.
