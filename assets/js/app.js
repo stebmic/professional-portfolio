@@ -39,12 +39,29 @@ function renderDocuments() {
     return;
   }
 
-  list.innerHTML = filtered.map(doc => {
-    return '<article class="document-row"><div class="document-info"><span class="pdf-icon">CERT</span><div><h3>' +
-      escapeHtml(doc.title) + '</h3><p>' + escapeHtml(doc.description) + ' · ' + escapeHtml(doc.date) +
-      '</p></div></div><div class="doc-actions"><a class="cert-link" href="' +
-      escapeHtml(doc.url) + '" target="_blank" rel="noopener noreferrer">Voir le certificat ↗</a></div></article>';
+  list.innerHTML = filtered.map((doc, index) => {
+    const action = doc.file
+      ? '<button type="button" data-preview="' + index + '">Consulter dans la page ↗</button>'
+      : '<a class="cert-link" href="' + escapeHtml(doc.url) + '" target="_blank" rel="noopener noreferrer">Voir le certificat ↗</a>';
+    return '<article class="document-row"><div class="document-info"><span class="pdf-icon">' +
+      (doc.file ? 'PDF' : 'CERT') + '</span><div><h3>' + escapeHtml(doc.title) +
+      '</h3><p>' + escapeHtml(doc.description) + ' · ' + escapeHtml(doc.date) +
+      '</p></div></div><div class="doc-actions">' + action + '</div></article>';
   }).join("");
+
+  list.querySelectorAll("[data-preview]").forEach(button => button.addEventListener("click", () => {
+    const doc = filtered[Number(button.dataset.preview)];
+    showDocument(doc);
+  }));
+}
+
+function showDocument(doc) {
+  if (!doc.file) return;
+  viewer.hidden = false;
+  viewerTitle.textContent = doc.title;
+  frame.src = encodeURI(doc.file);
+  openLink.href = encodeURI(doc.file);
+  viewer.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
 document.querySelectorAll(".filter").forEach(button => button.addEventListener("click", () => {
